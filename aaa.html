@@ -1,0 +1,103 @@
+<html>
+<body>
+	<head>
+		<meta charset=utf-8 http-equiv="Content-Type" content="text/html;"/>
+		<title>留言板</title>
+		<style>
+			.box{
+				position:abosolute;
+				left:0px;
+				top:0px;
+			}
+			
+			.form-box{
+				position:absolute;
+				left:850px;
+				top:450px;
+			}
+			
+			.botton-box{
+				position:absolute;
+				top:160px;
+				left:80px;
+			}
+			
+			.botton{
+				display: block;
+				padding: 0;
+				border: 2px solid #1ECD97;
+				border-radius: 40px;
+				text-align: center;
+				width: 100px;
+				height: 40px;
+				opacity:0.7;
+			}
+			
+			textarea{
+				width:210px;
+				height:90px;
+				resize:none;
+			}
+			
+			.message{
+				position:absolute;
+				top:60px;
+				width:100px;
+			}
+			
+			.textarea{
+				position:absolute;
+				top:60px;
+				left:95px;
+			}
+			
+			.name-box{
+				position:absolute;
+				top:0px;
+				left:0;
+				width:100px;
+			}
+			
+			.input1{
+				position:absolute;
+				top:0px;
+				left:95px;
+			}
+			
+			input{width:210px;}
+			
+			.cue-box{
+				position:absolute;
+				top:30px;
+				left:0;
+				
+			}
+			
+			.input2{
+				position:absolute;
+				top:30px;
+				left:95px;
+			}
+		</style>
+	</head>
+
+
+	<div class="box">
+		<img src="./imagine/de3cb2096b63f6246766f1008044ebf81a4ca399.jpg"/>
+		<div class="form-box">
+			<form name="input" action="mysql.php" method="post">
+				<div class="name-box">姓 名:</div>
+				<div class="input1"><input type="text" name="fname" value="请输入你的姓名" onfocus="javascript:if(this.value=='请输入你的姓名')this.value='';"></div>
+				<div class="cue-box">Cue:</div>
+				<div class="input2"><input type="text" name="cue1" value="请输入你要@的人" onfocus="javascript:if(this.value=='请输入你要@的人')this.value='';"></div>
+				<div class="botton-box">
+					<input type="submit" class="botton">
+				</div>
+				<div class="message">留言内容:</div>
+				<div class="textarea"><textarea type="text" rows="3" cols="20" name="con"></textarea></div>
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>
